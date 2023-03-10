@@ -2,7 +2,7 @@
 
 Welcome! 
 
-%In this page we provide all the necessary information to replicate the experimental protocol of the benchmark evaluation of SwipeFormer, a novel Transformer-based mobile touchscreem verification system proposed in [\[1\]](https://arxiv.org/abs/2212.13075). The model development and evaluation described is carried out over the Aalto Mobile Keystroke Database [\[2\]](https://userinterfaces.aalto.fi/typing37k/resources/Mobile_typing_study.pdf). 
+<!---In this page we provide all the necessary information to replicate the experimental protocol of the benchmark evaluation of SwipeFormer, a novel Transformer-based mobile touchscreem verification system proposed in [\[1\]](https://arxiv.org/abs/2212.13075). The model development and evaluation described is carried out over the Aalto Mobile Keystroke Database [\[2\]](https://userinterfaces.aalto.fi/typing37k/resources/Mobile_typing_study.pdf). 
 The followed experimental protocol is also adopted in [\[3\]](https://arxiv.org/abs/2212.13075), [\[4\]](https://ieeexplore.ieee.org/document/9539873). 
 
 
@@ -63,9 +63,9 @@ Int. Conf. on Human-Computer Interaction with Mobile Devices and Services, 2019.
 
 [\[3\] *Giuseppe Stragapede, Paula Delgado-Santos, Ruben Tolosana, Ruben Vera-Rodriguez, Richard Guest, and Aythami Morales, “Mobile Keystroke Biometrics Using Transformers”, Proc. of the Int. Conf. on Face and Gesture Recognition (FG), 2023.*](https://arxiv.org/abs/2212.13075) 
 
-[\[4\] *Alejandro Acien, Aythami Morales, John V. Monaco, Ruben Vera-Rodriguez, and Julian Fierrez, "TypeNet: Deep learning keystroke biometrics." IEEE Transactions on Biometrics, Behavior, and Identity Science (TBIOM), 4.1 (2021): 57-70, 2021.*](https://ieeexplore.ieee.org/document/9539873)
+[\[4\] *Alejandro Acien, Aythami Morales, John V. Monaco, Ruben Vera-Rodriguez, and Julian Fierrez, "TypeNet: Deep learning keystroke biometrics." IEEE Transactions on Biometrics, Behavior, and Identity Science (TBIOM), 4.1 (2021): 57-70, 2021.*](https://ieeexplore.ieee.org/document/9539873)--->
 
 
 
 
-**Contact: [giuseppe.stragapede@uam.es](mailto:giuseppe.stragapede@uam.es)**
+**Contact: [paula.delgado-de-santos@kent.ac.uk](mailto:paula.delgado-de-santos@kent.ac.uk)**
