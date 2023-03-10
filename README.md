@@ -1,8 +1,8 @@
-# TypeFormer: Transformers for Mobile Keystroke Biometrics
+# SwipeFormer: Transformers for Mobile Touchscreen Biometrics
 
 Welcome! 
 
-In this page we provide all the necessary information to replicate the experimental protocol of the benchmark evaluation of TypeFormer, a novel Transformer-based mobile keystroke verification system proposed in [\[1\]](https://arxiv.org/abs/2212.13075). The model development and evaluation described is carried out over the Aalto Mobile Keystroke Database [\[2\]](https://userinterfaces.aalto.fi/typing37k/resources/Mobile_typing_study.pdf). 
+%In this page we provide all the necessary information to replicate the experimental protocol of the benchmark evaluation of SwipeFormer, a novel Transformer-based mobile touchscreem verification system proposed in [\[1\]](https://arxiv.org/abs/2212.13075). The model development and evaluation described is carried out over the Aalto Mobile Keystroke Database [\[2\]](https://userinterfaces.aalto.fi/typing37k/resources/Mobile_typing_study.pdf). 
 The followed experimental protocol is also adopted in [\[3\]](https://arxiv.org/abs/2212.13075), [\[4\]](https://ieeexplore.ieee.org/document/9539873). 
 
 
