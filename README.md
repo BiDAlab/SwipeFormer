@@ -2,7 +2,7 @@
 
 Welcome! 
 
-<!---In this page we provide all the necessary information to replicate the experimental protocol of the presented Transformer-based biometric identification system proposed in [\[1\]](https://arxiv.org/pdf/2206.01441.pdf). In this article we explore and propose novel behavioural biometric systems based on Transformers.
+In this page we provide all the necessary information to replicate the experimental protocol of the presented Transformer-based biometric identification system proposed in [\[1\]](https://arxiv.org/pdf/2206.01441.pdf). In this article we explore and propose novel behavioural biometric systems based on Transformers.
 The model development and evaluation described is carried out over the whuGAIT and OU-ISIR Databases [\[2\]][\[3\]](https://github.com/qinnzou/Gait-Recognition-Using-Smartphones). 
 
 
@@ -16,7 +16,7 @@ The new proposed Transformer based on a selection of the best components present
 First, we consider a parallel two-stream architecture with Temporal and Channel Modules, similar to the THAT approach presented in [4]. Unlike the THAT model, we consider a Gaussian range encoding as input of both Temporal and Channel Modules. In addition, for the Temporal Module (left branch), we consider a combination of multi-head Auto-Correlation layers, proposed in Autoformer [5], and a recurrent layer in between, proposed in Block-Recurrent Transformer [6]. For the multi-head Auto-Correlation layer, we design a specific multi-scale Gait Biometric Recognition (GBR) CNN sub-layer. Regarding the Channel Module (right branch), we consider a multi-head Auto-Correlation sub-layer together with a multi-scale GBR CNN sub-layer. After each sub-layer, a residual connection is applied followed by a normalisation of the layer, similar to the Vanilla Transformer [7]. The time complexity and memory usage of each layer with Auto-Correlation is O(L log L), whereas for the recurrent layer this is O(L).
 
 
-# Benchmark Evaluation of our proposed Transformer
+<!---# Benchmark Evaluation of our proposed Transformer
 
 We analyse the performance of TypeFormer over an evaluation set of *U* = 1000 subjects unseen in the training and validation phases. The metric chosen for evaluation is the Equal Error Rate (EER). 
 
@@ -50,7 +50,7 @@ Concerning the impostor score distribution, for every other subject in the evalu
 
 For each subject, the enrolment sessions are the chosen in a orderly fashion from the first 10 sessions. For *E* = 1, the enrolment session chosen will be the first one. For *E* = 2, the enrolment sessions will be the first two, and so on. The verification sessions selected are always the last 5 sessions out of the 15 sessions per subject considered. 
 
-All data sessions used for evaluation, separated by subject, are reported in the "TypeFormer_benchmark_sessions.json" file uploaded. Each key corresponds to a user identified by their "PARTICIPANT_ID" in the raw data of the Aalto Mobile Keystroke Database. For each user keys, each of the list elements correspond to the "TEST_SECTION_ID" of each of the acquisition sessions in the raw data.
+All data sessions used for evaluation, separated by subject, are reported in the "TypeFormer_benchmark_sessions.json" file uploaded. Each key corresponds to a user identified by their "PARTICIPANT_ID" in the raw data of the Aalto Mobile Keystroke Database. For each user keys, each of the list elements correspond to the "TEST_SECTION_ID" of each of the acquisition sessions in the raw data.--->
 
 
 # References
@@ -69,7 +69,7 @@ Series Forecasting, in: Proc. Advances in Neural Information Processing Systems,
 [\[6\] *D. Hutchins, I. Schlag, Y. Wu, E. Dyer, B. Neyshabur, Block-Recurrent Transformers, in: Proc. Advances in Neural Information Processing Systems, 2022*](https://proceedings.neurips.cc/paper_files/paper/2022/file/d6e0bbb9fc3f4c10950052ec2359355c-Paper-Conference.pdf)
 
 [\[7\] *A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, L. Kaiser, I. Polosukhin, Attention is All
-you Need, in: Proc. Advances in Neural Information Processing Systems, Vol. 30, 2017*](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)--->
+you Need, in: Proc. Advances in Neural Information Processing Systems, Vol. 30, 2017*](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)
 
 
 
