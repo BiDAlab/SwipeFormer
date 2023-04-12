@@ -3,7 +3,7 @@
 Welcome! 
 
 In this page we provide all the necessary information to replicate the experimental protocol of the presented Transformer-based biometric identification system proposed in [\[1\]](https://arxiv.org/pdf/2206.01441.pdf). In this article we explore and propose novel behavioural biometric systems based on Transformers.
-The model development and evaluation described is carried out over the whuGAIT and OU-ISIR Databases [\[2\]][\[3\]](https://github.com/qinnzou/Gait-Recognition-Using-Smartphones). 
+The model development and evaluation described is carried out over the whuGAIT and OU-ISIR Databases [\[2\]] [\[3\]](https://github.com/qinnzou/Gait-Recognition-Using-Smartphones). 
 
 
 
