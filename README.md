@@ -11,7 +11,7 @@ The model development and evaluation described is carried out over the whuGAIT a
 
 The new proposed Transformer based on a selection of the best components presented in previous Transformer architectures. 
 
-![](https://drive.google.com/file/d/1PLjDx34iFugNUUxlw3CuMT8eo0-woYb8/view?usp=sharing)
+![]([https://drive.google.com/file/d/1PLjDx34iFugNUUxlw3CuMT8eo0-woYb8/view?usp=sharing](https://drive.google.com/file/d/1PLjDx34iFugNUUxlw3CuMT8eo0-woYb8/view?usp=share_link))
 
 First, we consider a parallel two-stream architecture with Temporal and Channel Modules, similar to the THAT approach presented in [4]. Unlike the THAT model, we consider a Gaussian range encoding as input of both Temporal and Channel Modules. In addition, for the Temporal Module (left branch), we consider a combination of multi-head Auto-Correlation layers, proposed in Autoformer [5], and a recurrent layer in between, proposed in Block-Recurrent Transformer [6]. For the multi-head Auto-Correlation layer, we design a specific multi-scale Gait Biometric Recognition (GBR) CNN sub-layer. Regarding the Channel Module (right branch), we consider a multi-head Auto-Correlation sub-layer together with a multi-scale GBR CNN sub-layer. After each sub-layer, a residual connection is applied followed by a normalisation of the layer, similar to the Vanilla Transformer [7]. The time complexity and memory usage of each layer with Auto-Correlation is O(L log L), whereas for the recurrent layer this is O(L).
 
