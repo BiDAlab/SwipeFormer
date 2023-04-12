@@ -1,23 +1,22 @@
-# SwipeFormer: Transformers for Mobile Touchscreen Biometrics
+# Exploring Transformers for Behavioural Biometrics: A Case Study in Gait Recognition
 
 Welcome! 
 
-<!---In this page we provide all the necessary information to replicate the experimental protocol of the benchmark evaluation of SwipeFormer, a novel Transformer-based mobile touchscreem verification system proposed in [\[1\]](https://arxiv.org/abs/2212.13075). The model development and evaluation described is carried out over the Aalto Mobile Keystroke Database [\[2\]](https://userinterfaces.aalto.fi/typing37k/resources/Mobile_typing_study.pdf). 
-The followed experimental protocol is also adopted in [\[3\]](https://arxiv.org/abs/2212.13075), [\[4\]](https://ieeexplore.ieee.org/document/9539873). 
+<!---In this page we provide all the necessary information to replicate the experimental protocol of the presented Transformer-based biometric identification system proposed in [\[1\]](https://arxiv.org/pdf/2206.01441.pdf). In this article we explore and propose novel behavioural biometric systems based on Transformers.
+The model development and evaluation described is carried out over the whuGAIT and OU-ISIR Databases [\[2\]][\[3\]](https://github.com/qinnzou/Gait-Recognition-Using-Smartphones). 
 
 
-# Introductory Description of the Raw Data
 
-The database is available for download [here](https://userinterfaces.aalto.fi/typing37k/). We selected the following option for download:
+# Description of the proposed Transformer-based biometric system
 
-"-	CSV versions of the raw and processed data as a .zip file (5.6GB zipped)."
+The new proposed Transformer based on a selection of the best components presented in previous Transformer architectures. 
 
-In the .zip file downloaded, we have considered the files “keystrokes.csv” and “test_sections.csv” inside the “Data_Raw” folder:
--	“keystrokes.csv” contains each single key pressed included in the database, linking it to the specific acquisition session through the ‘TEST_SECTION_ID’ field.
--	“test_sections.csv” contains information about each single acquisition session in the database, linking it to the specific subject through the ‘PARTICIPANT_ID’ field.
+![](https://drive.google.com/file/d/1PLjDx34iFugNUUxlw3CuMT8eo0-woYb8/view?usp=sharing)
+
+First, we consider a parallel two-stream architecture with Temporal and Channel Modules, similar to the THAT approach presented in [4]. Unlike the THAT model, we consider a Gaussian range encoding as input of both Temporal and Channel Modules. In addition, for the Temporal Module (left branch), we consider a combination of multi-head Auto-Correlation layers, proposed in Autoformer [5], and a recurrent layer in between, proposed in Block-Recurrent Transformer [6]. For the multi-head Auto-Correlation layer, we design a specific multi-scale Gait Biometric Recognition (GBR) CNN sub-layer. Regarding the Channel Module (right branch), we consider a multi-head Auto-Correlation sub-layer together with a multi-scale GBR CNN sub-layer. After each sub-layer, a residual connection is applied followed by a normalisation of the layer, similar to the Vanilla Transformer [7]. The time complexity and memory usage of each layer with Auto-Correlation is O(L log L), whereas for the recurrent layer this is O(L).
 
 
-# Benchmark Evaluation of TypeFormer
+# Benchmark Evaluation of our proposed Transformer
 
 We analyse the performance of TypeFormer over an evaluation set of *U* = 1000 subjects unseen in the training and validation phases. The metric chosen for evaluation is the Equal Error Rate (EER). 
 
@@ -56,14 +55,21 @@ All data sessions used for evaluation, separated by subject, are reported in the
 
 # References
 
-[\[1\] *Giuseppe Stragapede, Paula Delgado-Santos, Ruben Tolosana, Ruben Vera-Rodriguez, Richard Guest, and Aythami Morales, “TypeFormer: Transformers for Mobile Keystroke Biometrics”, arXiv:2207.07596, 2023.*](https://arxiv.org/abs/2212.13075)
+[\[1\] *Paula Delgado-Santos, Ruben Tolosana, Richard Guest, Ruben Vera-Rodriguez, and Farzin Deravi, “Exploring Transformers for Behavioural Biometrics: A Case Study in Gait Recognition”, arXiv:2206.01441, 2022.*](https://arxiv.org/pdf/2206.01441.pdf)
 
-[\[2\] *Kseniia Palin, Anna Feit, Sunjun Kim, Per Ola Kristensson, and Antti Oulasvirta, "How do people type on mobile devices? Observations from a study with 37,000 volunteers", Proc. of the 21st
-Int. Conf. on Human-Computer Interaction with Mobile Devices and Services, 2019.*](https://userinterfaces.aalto.fi/typing37k/resources/Mobile_typing_study.pdf)
+[\[2\] *Q. Zou, Y. Wang, Q. Wang, Y. Zhao, Q. Li, Deep Learning-based Gait Recognition using Smartphones in the Wild, IEEE Transactions on Information Forensics and Security 15 (2020) 3197–3212*](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9056812)
 
-[\[3\] *Giuseppe Stragapede, Paula Delgado-Santos, Ruben Tolosana, Ruben Vera-Rodriguez, Richard Guest, and Aythami Morales, “Mobile Keystroke Biometrics Using Transformers”, Proc. of the Int. Conf. on Face and Gesture Recognition (FG), 2023.*](https://arxiv.org/abs/2212.13075) 
+[\[3\] *GT. T. Ngo, Y. Makihara, H. Nagahara, Y. Mukaigawa, Y. Yagi, The Largest Inertial Sensor-based Gait Database and Performance Evaluation of Gait-based Personal Authentication, Pattern Recognition 47 (1) (2014) 228–237*](https://www.sciencedirect.com/science/article/pii/S003132031300280X)
 
-[\[4\] *Alejandro Acien, Aythami Morales, John V. Monaco, Ruben Vera-Rodriguez, and Julian Fierrez, "TypeNet: Deep learning keystroke biometrics." IEEE Transactions on Biometrics, Behavior, and Identity Science (TBIOM), 4.1 (2021): 57-70, 2021.*](https://ieeexplore.ieee.org/document/9539873)--->
+[\[4\] *B. Li, W. Cui, W. Wang, L. Zhang, Z. Chen, M. Wu, Two-stream Convolution Augmented Transformer for Human Activity Recognition, in: Proc. AAAI Conference on Artificial Intelligence, 2021*](https://ojs.aaai.org/index.php/AAAI/article/view/16103)
+
+[\[5\] *H. Wu, J. Xu, J. Wang, M. Long, Autoformer: Decomposition Transformers with Auto-Correlation for Long-Term
+Series Forecasting, in: Proc. Advances in Neural Information Processing Systems, 2021.*](https://proceedings.neurips.cc/paper_files/paper/2021/file/bcc0d400288793e8bdcd7c19a8ac0c2b-Paper.pdf)
+
+[\[6\] *D. Hutchins, I. Schlag, Y. Wu, E. Dyer, B. Neyshabur, Block-Recurrent Transformers, in: Proc. Advances in Neural Information Processing Systems, 2022*](https://proceedings.neurips.cc/paper_files/paper/2022/file/d6e0bbb9fc3f4c10950052ec2359355c-Paper-Conference.pdf)
+
+[\[7\] *A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, L. Kaiser, I. Polosukhin, Attention is All
+you Need, in: Proc. Advances in Neural Information Processing Systems, Vol. 30, 2017*](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)--->
 
 
 
