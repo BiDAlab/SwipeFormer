@@ -1,6 +1,6 @@
 # SwipeFormer: Transformers for Mobile Touchscreen Biometrics
 
-![Header](./Images/SwipeFormer.pdf)
+![Header](./Images/SwipeFormer.png)
 
 <!---# Welcome! 
 
