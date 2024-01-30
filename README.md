@@ -1,24 +1,47 @@
 # SwipeFormer: Transformers for Mobile Touchscreen Biometrics
 
-Welcome! 
+![Header](./Images/SwipeFormer.pdf)
+
+<!---# Welcome! 
 
 In this page we provide all the necessary information to replicate the experimental protocol of SwipeFormer, a novel mobile touchscreen verification system based on
-Transformers. 
+Transformers. --->
+
+# Citation
+
+If you use our code please cite:
+
+```
+@article{delgado2024swipeformer,
+  title={{Exploring Transformers for Behavioural Biometrics: A Case Study in Gait Recognition}},
+  author={Delgado-Santos, Paula and Tolosana, Ruben and Guest, Richard and Lamb, Parker and Khmelnitsky, Andrei and Coughlan, Colm, and Fierrez, Julian},
+  journal={Expert Systems with Applications},
+  volume = {237},
+  pages = {121537},
+  year = {2024}
+}
+
+```
+
+# Overview
+
+This article explores and proposes novel touchscreen verification systems based on Transformers.
+
+Transformers are more recently proposed DL architectures that have already garnered impmense interest due to their effectiveness across a range of application domains such as language assessment, vision, reinforcement learning, and biometrics [\[1\]. Their main advantages compared with traditional CNN and RNN architectures are: *i)* Transformers are feed-forward models that process all the sequences in parallel, therefore increasing efficiency; *ii)* They apply Self-Attention/Auto-Correlation mechanisms that allows them to operate in long sequences; *iii)* They can be trained efficiently in a single batch since all the sequence is included in every batch; and *iv)* They can attend to the whole sequence, instead of summarising all the previous temporal information.
+
+To the best of our knowledge, this is the first study that explores the potential of Transformers for mobile touchscreen biometrics. In addition, from our knowledge, this is the first study that analyses unconstrained touchscreen gestures, achieving promising results.
+
+
+<!---# Benchmark Evaluation of SwipeFormer
+
+We analyse the performance of SwipeFormer using the popular publicly available databases collected under constrained conditions: Frank DB \citep{frank2012touchalytics} and HuMIdb \citep{Acien2020b}. SwipeFormer achieves EER values of 11.0\% and 5.0\% on Frank DB and HuMIdb, respectively, outperforming previous state-of-the-art approaches.
 
 
 
-<!---# Description of the proposed Transformer-based biometric system
-
-The new proposed Transformer based on a selection of the best components presented in previous Transformer architectures. 
-
-![]([https://drive.google.com/file/d/1PLjDx34iFugNUUxlw3CuMT8eo0-woYb8/view?usp=sharing](https://drive.google.com/file/d/1PLjDx34iFugNUUxlw3CuMT8eo0-woYb8/view?usp=share_link))
-
-First, we consider a parallel two-stream architecture with Temporal and Channel Modules, similar to the THAT approach presented in [4]. Unlike the THAT model, we consider a Gaussian range encoding as input of both Temporal and Channel Modules. In addition, for the Temporal Module (left branch), we consider a combination of multi-head Auto-Correlation layers, proposed in Autoformer [5], and a recurrent layer in between, proposed in Block-Recurrent Transformer [6]. For the multi-head Auto-Correlation layer, we design a specific multi-scale Gait Biometric Recognition (GBR) CNN sub-layer. Regarding the Channel Module (right branch), we consider a multi-head Auto-Correlation sub-layer together with a multi-scale GBR CNN sub-layer. After each sub-layer, a residual connection is applied followed by a normalisation of the layer, similar to the Vanilla Transformer [7]. The time complexity and memory usage of each layer with Auto-Correlation is O(L log L), whereas for the recurrent layer this is O(L).
 
 
-<!---# Benchmark Evaluation of our proposed Transformer
 
-We analyse the performance of TypeFormer over an evaluation set of *U* = 1000 subjects unseen in the training and validation phases. The metric chosen for evaluation is the Equal Error Rate (EER). 
+over an evaluation set of *U* = 1000 subjects unseen in the training and validation phases. The metric chosen for evaluation is the Equal Error Rate (EER). 
 
 We consider a fixed number of 15 acquisition sessions per subject. Out of these, we use a variable number of enrolment sessions (*E* = 1, 2, 5, 7, 10) in order to assess the performance adaptation of the system to reduced availability of enrolment data. Additionally, also the experiments are repeated changing the input sequence length, *L* = 30, 50, 70, 100, to evaluate the optimal keystroke sequence length.
 
