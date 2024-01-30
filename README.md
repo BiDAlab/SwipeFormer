@@ -7,21 +7,6 @@
 In this page we provide all the necessary information to replicate the experimental protocol of SwipeFormer, a novel mobile touchscreen verification system based on
 Transformers. --->
 
-# Citation
-
-If you use our code please cite:
-
-```
-@article{delgado2024swipeformer,
-  title={{Exploring Transformers for Behavioural Biometrics: A Case Study in Gait Recognition}},
-  author={Delgado-Santos, Paula and Tolosana, Ruben and Guest, Richard and Lamb, Parker and Khmelnitsky, Andrei and Coughlan, Colm, and Fierrez, Julian},
-  journal={Expert Systems with Applications},
-  volume = {237},
-  pages = {121537},
-  year = {2024}
-}
-
-```
 
 # Overview
 
@@ -94,7 +79,21 @@ Series Forecasting, in: Proc. Advances in Neural Information Processing Systems,
 [\[7\] *A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, L. Kaiser, I. Polosukhin, Attention is All
 you Need, in: Proc. Advances in Neural Information Processing Systems, Vol. 30, 2017*](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)--->
 
+# Citation
 
+If you use our code please cite:
+
+```
+@article{delgado2024swipeformer,
+  title={{Exploring Transformers for Behavioural Biometrics: A Case Study in Gait Recognition}},
+  author={Delgado-Santos, Paula and Tolosana, Ruben and Guest, Richard and Lamb, Parker and Khmelnitsky, Andrei and Coughlan, Colm, and Fierrez, Julian},
+  journal={Expert Systems with Applications},
+  volume = {237},
+  pages = {121537},
+  year = {2024}
+}
+
+```
 
 # Contact
 
