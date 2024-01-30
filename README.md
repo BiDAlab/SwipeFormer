@@ -12,14 +12,14 @@ Transformers. --->
 
 This article explores and proposes novel touchscreen verification systems based on Transformers.
 
-Transformers are more recently proposed DL architectures that have already garnered impmense interest due to their effectiveness across a range of application domains such as language assessment, vision, reinforcement learning, and biometrics [\[1\]]. Their main advantages compared with traditional CNN and RNN architectures are: *i)* Transformers are feed-forward models that process all the sequences in parallel, therefore increasing efficiency; *ii)* They apply Self-Attention/Auto-Correlation mechanisms that allows them to operate in long sequences; *iii)* They can be trained efficiently in a single batch since all the sequence is included in every batch; and *iv)* They can attend to the whole sequence, instead of summarising all the previous temporal information.
+Transformers are more recently proposed DL architectures that have already garnered impmense interest due to their effectiveness across a range of application domains such as language assessment, vision, reinforcement learning, and biometrics [\[1\]](https://www.sciencedirect.com/science/article/pii/S003132032300496X). Their main advantages compared with traditional CNN and RNN architectures are: *i)* Transformers are feed-forward models that process all the sequences in parallel, therefore increasing efficiency; *ii)* They apply Self-Attention/Auto-Correlation mechanisms that allows them to operate in long sequences; *iii)* They can be trained efficiently in a single batch since all the sequence is included in every batch; and *iv)* They can attend to the whole sequence, instead of summarising all the previous temporal information.
 
 To our knowledge, this study represents the initial exploration of the potential application of Transformers in the domain of mobile touchscreen biometrics. Furthermore, it stands as the primary investigation to analyze unconstrained touchscreen gestures, yielding promising outcomes.
 
 
 # Benchmark Evaluation of SwipeFormer
 
-We analyse the performance of SwipeFormer using the popular publicly available databases collected under constrained conditions: *i)* Frank DB [\[2\]] and *ii)* HuMIdb [\[3\]]. SwipeFormer achieves EER values of 11.0\% and 5.0\% on Frank DB and HuMIdb, respectively, outperforming previous state-of-the-art approaches.
+We analyse the performance of SwipeFormer using the popular publicly available databases collected under constrained conditions: *i)* Frank DB [\[2\]](https://ieeexplore.ieee.org/document/6331527?denied=) and *ii)* HuMIdb [\[3\]](https://www.sciencedirect.com/science/article/pii/S0952197620303274). SwipeFormer achieves EER values of 11.0\% and 5.0\% on Frank DB and HuMIdb, respectively, outperforming previous state-of-the-art approaches.
 
 
 # Dependences 
