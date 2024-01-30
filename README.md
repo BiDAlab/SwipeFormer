@@ -19,10 +19,26 @@ To our knowledge, this study represents the initial exploration of the potential
 
 # Benchmark Evaluation of SwipeFormer
 
-We analyse the performance of SwipeFormer using the popular publicly available databases collected under constrained conditions: *i)* Frank DB [\[2\] and *ii)* HuMIdb [\[3\]. SwipeFormer achieves EER values of 11.0\% and 5.0\% on Frank DB and HuMIdb, respectively, outperforming previous state-of-the-art approaches.
+We analyse the performance of SwipeFormer using the popular publicly available databases collected under constrained conditions: *i)* Frank DB [\[2\]] and *ii)* HuMIdb [\[3\]]. SwipeFormer achieves EER values of 11.0\% and 5.0\% on Frank DB and HuMIdb, respectively, outperforming previous state-of-the-art approaches.
 
 
+# Dependences 
 
+`conda=22.9.0`
+
+`CUDA`
+
+`numpy=1.24.1`
+
+`python=3.9.7`
+
+`torch=1.11.0`
+
+
+# Code
+
+We will provide the evaluation scripts together with their pre-trained models shortly. 
+<!--We provide the evaluation scripts together with their pre-trained models in this repo. -->
 
 
 
