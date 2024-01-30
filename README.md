@@ -19,8 +19,9 @@ To our knowledge, this study represents the initial exploration of the potential
 
 # Benchmark Evaluation of SwipeFormer
 
-We analyse the performance of SwipeFormer using the popular publicly available databases collected under constrained conditions: *i)* Frank DB [\[2\]](https://ieeexplore.ieee.org/document/6331527?denied=) and *ii)* HuMIdb [\[3\]](https://www.sciencedirect.com/science/article/pii/S0952197620303274). SwipeFormer achieves EER values of 11.0\% and 5.0\% on Frank DB and HuMIdb, respectively, outperforming previous state-of-the-art approaches.
+We analyse the performance of SwipeFormer using the popular publicly available databases collected under constrained conditions: *i)* Frank DB [\[2\]](https://ieeexplore.ieee.org/document/6331527?denied=) and *ii)* HuMIdb [\[3\]](https://www.sciencedirect.com/science/article/pii/S0952197620303274). 
 
+Overall, SwipeFormer outperforms previous state-of-the-art approaches in both databases under the same experimental protocol. In particular, for the Frank database [\[2\]](https://ieeexplore.ieee.org/document/6331527?denied=), SwipeFormer achieves an EER of 11.30\% in comparison with the 43.60\% EER obtained with [\[4\]](https://ieeexplore.ieee.org/document/8353868) and 25.00\% with [\[5\]](https://ieeexplore.ieee.org/document/9202803) (relative improvements of 74.80\% and 56.00\% respectively). In addition, for HuMIdb [\[3\]](https://www.sciencedirect.com/science/article/pii/S0952197620303274), SwipeFormer obtains an EER of 5.60\% while [\[4\]](https://ieeexplore.ieee.org/document/8353868) and [\[5\]](https://ieeexplore.ieee.org/document/9202803) approaches achieve 43.10\% and 13.00\% EERs respectively  (relative improvements of 88.40\% and 61.50\%). 
 
 # Dependences 
 
@@ -84,6 +85,10 @@ All data sessions used for evaluation, separated by subject, are reported in the
 [\[2\] *M. Frank, R. Biedert, E. Ma, I. Martinovic, D. Song, Touchalytics: On the Applicability of Touchscreen Input as a Behavioral Biometric for Continuous Authentication, IEEE Transactions on Information Forensics and Security 8 (2012) 136–138*](https://ieeexplore.ieee.org/document/6331527?denied=)
 
 [\[3\] *A. Acien, A. Morales, J. Fierrez, R. Vera-Rodriguez and O. Delgado-Mohatar, BeCAPTCHA: Behavioral Bot Detection using Touchscreen and Mobile Sensors Benchmarked on HuMIdb, Engineering Applications of Artificial Intelligence 98 (2021) 104058*](https://www.sciencedirect.com/science/article/pii/S0952197620303274)
+
+[\[4\] *J. Fierrez, A. Pozo, M. Martinez-Diaz, J. Galbally and A. Morales, Benchmarking Touchscreen Biometrics for Mobile Authentication, IEEE Transactions on Information Forensics and Security 13 (2018) 2720--2733*](https://ieeexplore.ieee.org/document/8353868)
+
+[\[5\] *A. Acien, A. Morales, R. Vera-Rodriguez and J. Fierrez, Smartphone Sensors for Modeling Human-Computer Interaction: General Outlook and Research Datasets for User Authentication, Proc. IEEE Annual Computers, Software, and Applications Conference (2020)](https://ieeexplore.ieee.org/document/9202803)
 
 <!---#[\[4\] *B. Li, W. Cui, W. Wang, L. Zhang, Z. Chen, M. Wu, Two-stream Convolution Augmented Transformer for Human Activity Recognition, in: Proc. AAAI Conference on Artificial Intelligence, 2021*](https://ojs.aaai.org/index.php/AAAI/article/view/16103)
 
