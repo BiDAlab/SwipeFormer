@@ -38,7 +38,7 @@ Overall, SwipeFormer outperforms previous state-of-the-art approaches in both da
 
 # Code
 
-We will provide the evaluation scripts together with their pre-trained models shortly. 
+We provide the evaluation scripts in the Code folder. 
 <!--We provide the evaluation scripts together with their pre-trained models in this repo. -->
 
 
