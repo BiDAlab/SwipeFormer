@@ -112,10 +112,10 @@ K = 20
 output_dim = 64
 
 ##################  DATASET  ######################
-testing_dataset = torch.load('testing_data_frank2.pt')
+testing_dataset = torch.load('testing_data_frank.pt')
 testing_dataloader = DataLoader(testing_dataset, batch_size=64, shuffle=False)
 
-validation_dataset = torch.load('validation_data_frank2.pt')
+validation_dataset = torch.load('validation_data_frank.pt')
 validation_dataloader = DataLoader(validation_dataset, batch_size=64, shuffle=False)
 
 
