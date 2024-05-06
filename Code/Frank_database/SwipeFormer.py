@@ -11,8 +11,6 @@ import torch.nn as nn
 import numpy as np
 from torch.autograd import Variable
 from torch.utils.data import Dataset, DataLoader
-# from authen_netw import *
-# from Transformer_models import Transformer_2chan_auth, Transformer_1channel_auth, Transformer_6chan_auth, Transformer_1channel_auth_linear, Informer
 import torch.nn.functional as F
 from SwipeDatasetTriplet import *
 from sklearn.metrics import roc_auc_score, roc_curve, det_curve
