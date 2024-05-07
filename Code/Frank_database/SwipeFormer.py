@@ -210,7 +210,7 @@ print(device)
 TransformerModel = TransformerModel.to(device)
 
 
-TransformerModel.load_state_dict(torch.load('../Models/Exp_Frank_Swipeformer_2_294'))
+TransformerModel.load_state_dict(torch.load('Exp_Frank_Swipeformer_weights'))
 
 TransformerModel.eval()
 
